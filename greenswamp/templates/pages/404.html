@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{{template "head" .}}
+<body class="bg-swamp-50 text-slate-800">
+{{template "nav" .}}
+
+<div class="bg-swamp-900 relative h-[900px]">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+        <img src="static/shrek.jpg" alt="Lonely toilet" class="w-full h-full object-cover object-center">
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 h-full flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
+                404 Not Found
+            </h1>
+            <p class="mt-4 max-w-md mx-auto text-lg text-swamp-300 sm:text-xl md:mt-6 md:max-w-2xl">
+                What are you doing in my swamp!?
+            </p>
+        </div>
+    </div>
+</div>
+
+{{template "footer" .}}
+</body>
+</html>

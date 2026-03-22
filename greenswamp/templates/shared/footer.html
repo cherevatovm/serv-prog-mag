@@ -1,0 +1,41 @@
+{{define "footer"}}
+<footer class="bg-swamp-900 text-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center space-x-2">
+                    <img src="static/green-toad-logo.svg" alt="Greenswamp Logo" class="h-8 w-8">
+                    <span class="text-xl font-bold">Greenswamp</span>
+                </div>
+                <p class="mt-4 text-sm text-swamp-300">
+                    Connecting people one ribbit at a time.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-sm font-semibold">Company</h4>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li><a href="/about" class="text-swamp-300 hover:text-white">About</a></li>
+                        <li><a href="/contact" class="text-swamp-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold">Legal</h4>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li><a href="/privacy" class="text-swamp-300 hover:text-white">Privacy</a></li>
+                        <li><a href="/tos" class="text-swamp-300 hover:text-white">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold">Stay Updated</h4>
+                <form class="mt-4 flex">
+                    <input type="email" placeholder="Enter your email"
+                           class="px-4 py-2 rounded-l-full flex-1 text-swamp-900">
+                    <button class="bg-swamp-500 px-6 py-2 rounded-r-full hover:bg-swamp-600">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+{{end}}
